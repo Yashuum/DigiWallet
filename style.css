@@ -1,0 +1,141 @@
+:root {
+  --bg-color: #121212;
+  --card-bg: #1e1e1e;
+  --text-color: #ffffff;
+  --border-color: #333;
+  --accent-green: #2ecc71;
+  --accent-red: #e74c3c;
+  --accent-purple: #9c88ff;
+  --box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+* {
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+.container {
+  width: 95%;
+  max-width: 400px;
+  margin: 20px auto;
+  background-color: var(--card-bg);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: var(--box-shadow);
+}
+
+h1, h2, h3, h4 {
+  color: var(--text-color);
+  margin-top: 0;
+}
+
+.inc-exp-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+  background-color: var(--bg-color);
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid var(--border-color);
+}
+
+.inc-exp-container > div {
+  flex: 1;
+  text-align: center;
+}
+
+.inc-exp-container > div:first-of-type {
+  border-right: 1px solid var(--border-color);
+}
+
+.money-plus {
+  color: var(--accent-green);
+}
+
+.money-minus {
+  color: var(--accent-red);
+}
+
+input[type="text"],
+input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--border-color);
+  background-color: #222;
+  color: var(--text-color);
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+label {
+  margin: 10px 0 5px;
+  display: block;
+}
+
+.btn {
+  background-color: var(--accent-purple);
+  color: #fff;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+  box-shadow: var(--box-shadow);
+}
+
+.btn:hover {
+  background-color: #7f66ff;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.list li {
+  background-color: #1a1a1a;
+  border-left: 5px solid;
+  padding: 10px 15px;
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 6px;
+  box-shadow: var(--box-shadow);
+  color: var(--text-color);
+}
+
+.list li.plus {
+  border-color: var(--accent-green);
+}
+
+.list li.minus {
+  border-color: var(--accent-red);
+}
+
+.delete-btn {
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+canvas {
+  background-color: #1a1a1a;
+  border-radius: 12px;
+  padding: 10px;
+  margin-top: 20px;
+}
